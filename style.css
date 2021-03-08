@@ -732,7 +732,8 @@ p{
 
 .form-button-col{
 	width: 10%;
-	margin-right: 10px;
+	margin-left: 20px;
+	margin-top: 10px;
 }
 
 .ma-button{
