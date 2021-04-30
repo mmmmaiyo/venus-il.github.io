@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>CSS Camp</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<script src = "./js/jquery-3.6.0.js"></script>
+	</head>
+
+	<body onload="quizStart()">
+		<div class="bg-img">
+			<div class="nav-bar">
+				<div class="std-container">
+					<a href="index.html" class="logo-link">
+						<img alt="Home Page" src="assets/css-3-logo.svg" class="logo-img">
+					</a>
+
+					<nav class="nav-menu">
+						<a href="index.html" class="nav-link"> Home </a>
+						<a href="quiz.html" class="nav-link"> Quiz </a>
+						<a href="contact.html" class="nav-link"> Contact </a>
+					</nav>
+				</div>	
+			</div>
+			<div class="hero-container">
+				<div class="std-container">
+					<div class="hero-text">
+						<h1 class="h-heading"> Elevate your <br> CSS in less than <br> 5 minutes </h1>
+						<p class="h-para"> Take a new quiz every day to make sure you never fall behind. </p>
+					</div>
+					<div class="hero-img"></div>
+				</div>
+			</div>
+		</div>
+		<div class = "main-content-container quiz-header">
+			<div class="m-inner-container bottom-border">
+				<div  class="m-header">
+					<div class="m-header-text">
+						<h2 class="h2-centered"> Ready to take the challenge? </h2>
+						<p class="p-centered">
+							The quiz should take you about 5 minutes to complete.
+							Once you're done, click the Submit Quiz button and go back to see how you did. 
+							Any questions you got wrong will highlight the correct answer as well as a short explanation and a link to some additional resources.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="quiz-outer">
+			<div id="q1" class="quiz-container drag-drop bottom-border">
+				<h3 class="question">Which of the following is the correct CSS syntax for padding?</h3>
+				<form class="q-dd-inner">
+					<div id="q-dd-1" class="q-dd" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="q-dd-answers" ondrop="drop(event)" ondragover="allowDrop(event)">
+						<ul>
+							<li><p id="q1-a" class="q-dd-a" draggable="true" ondragstart="drag(event)"> padding: -10px 0px; </p></li>
+							<li><p id="q1-b" class="q-dd-a" draggable="true" ondragstart="drag(event)"> padding-right: 5px; </p></li>
+							<li><p id="q1-c" class="q-dd-a" draggable="true" ondragstart="drag(event)"> padding: 10px 15px 5px 7px 22px; </p></li>
+							<li><p id="q1-d" class="q-dd-a" draggable="true" ondragstart="drag(event)"> padding-down: 15px; </p></li>
+						</ul>
+					</div>
+				</form>
+				<div id="q1-ans-hidden" class="hidden-answer" hidden>
+					<p class="p-hidden incorrect-msg">So close!</p>
+					<p class="p-hidden">An element's padding is the space between its content and its border. This property can have from one to four values. However, negative values are not allowed</p>
+					<p class="p-hidden">See <a class="a-hidden" href="https://www.w3schools.com/cssref/pr_padding.asp">https://www.w3schools.com/cssref/pr_padding.asp</a> for more information.</p>
+				</div>
+				<div class="button-container">
+					<button class="next">Next Question</button>
+				</div>
+			</div>
+			<div id="q2" class="quiz-container drag-drop bottom-border">
+				<h3 class="question">How should you configure your table width such that it adjusts to the width of the current window?</h3>
+				<form class="q-dd-inner">
+					<div id="q-dd-2" class="q-dd" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					<div class="q-dd-answers" ondrop="drop(event)" ondragover="allowDrop(event)">
+						<ul>
+							<li><p id="q2-a" class="q-dd-a" draggable="true" ondragstart="drag(event)"> width: 100%; </p></li>
+							<li><p id="q2-b" class="q-dd-a" draggable="true" ondragstart="drag(event)"> width: 1960px; </p></li>
+							<li><p id="q2-c" class="q-dd-a" draggable="true" ondragstart="drag(event)"> width: full-screen; </p></li>
+							<li><p id="q2-d" class="q-dd-a" draggable="true" ondragstart="drag(event)"> width: all; </p></li>
+						</ul>
+					</div>
+				</form>
+				<div id="q2-ans-hidden" class="hidden-answer" hidden>
+					<p class="p-hidden incorrect-msg">That's not right.</p>
+					<p class="p-hidden">The width attribute specifies the width of the element, in pixels, and does not include padding, borders, or margins. A % value defines the element's width as a percentage of its containing block.</p>
+					<p class="p-hidden">See <a class="a-hidden" href="https://www.w3schools.com/cssref/pr_dim_width.asp">https://www.w3schools.com/cssref/pr_dim_width.asp</a> for more information.</p>
+				</div>
+				<div class="button-container">
+					<button class="previous">Previous Question</button>
+					<button class="next">Next Question</button>
+				</div>
+			</div>
+			<div id="q3" class="quiz-container bottom-border">
+				<form class="q-drop-outer">
+					<label class="question">What is the default value of the position attribute?</label>
+					<select class="q-drop">
+						<option id="q3-a" value="absolute">absolute</option>
+						<option id="q3-b" value="flex">flex</option>
+						<option id="q3-c" value="relative">relative</option>
+						<option id="q3-d" value="static">static</option>
+					</select>
+				</form>
+				<div id="q3-ans-hidden" class="hidden-answer" hidden>
+					<p class="p-hidden incorrect-msg">Oops! Try again.</p>
+					<p class="p-hidden">The position property specifies the type of positioning method used for an element (static, relative, absolute, fixed, or sticky). Its default value is static</p>
+					<p class="p-hidden">See <a class="a-hidden" href="https://www.w3schools.com/css/css_positioning.asp">https://www.w3schools.com/css/css_positioning.asp</a> for more information.</p>
+				</div>
+				<div class="button-container">
+					<button class="previous">Previous Question</button>
+					<button class="next">Next Question</button>
+				</div>
+			</div>
+			<div id="q4" class="quiz-container bottom-border">
+				<form class="q-drop-outer">
+					<label class="question">Which property lets you display a border around a cell with no content inside a table?</label>
+					<select class="q-drop">
+						<option id="q4-a" value="absolute">blank-cells</option>
+						<option id="q4-b" value="flex">zero-cells</option>
+						<option id="q4-c" value="relative">empty-cells</option>
+						<option id="q4-d" value="static">null-cells</option>
+					</select>
+				</form>
+				<div id="q4-ans-hidden" class="hidden-answer" hidden>
+					<p class="p-hidden incorrect-msg">Bummer, you got it wrong.</p>
+					<p class="p-hidden">The empty-cells property sets whether or not to display borders on empty cells within a table</p>
+					<p class="p-hidden">See <a class="a-hidden" href="https://www.w3schools.com/cssref/pr_tab_empty-cells.asp">https://www.w3schools.com/cssref/pr_tab_empty-cells.asp</a> for more information.</p>
+				</div>
+				<div class="button-container">
+					<button class="previous">Previous Question</button>
+					<button class="next">Next Question</button>
+				</div>
+			</div>
+			<div id="q5" class="quiz-container bottom-border">
+				<label class="question">Which of these properties controls how an image scrolls in the background?</label>
+				<form class="q-msq-outer">
+					<div class="q-msq">
+						<input class="q-msq-r" type="radio" id="background-position" value="background-position">
+						<label id="q5-a" for="background-position">background-position</label>
+					</div>
+					<div class="q-msq">
+						<input class="q-msq-r" type="radio" id="background-repeat" value="background-repeat">
+						<label id="q5-b" for="background-repeat">background-repeat</label>
+					</div>
+					<div class="q-msq">
+						<input class="q-msq-r" type="radio" id="background-attachment" value="background-attachment">
+						<label id="q5-c" for="background-attachment">background-attachment</label>
+					</div>
+					<div class="q-msq">
+						<input class="q-msq-r" type="radio" id="background" value="background">
+						<label id="q5-d" for="background">background</label>
+					</div>
+				</form>
+				<div id="q5-ans-hidden" class="hidden-answer" hidden>
+					<p class="p-hidden incorrect-msg">That's wrong, sorry.</p>
+					<p class="p-hidden">The background-attachment property sets whether a background image scrolls with the rest of the page, or is fixed.</p>
+					<p class="p-hidden">See <a class="a-hidden" href="https://www.w3schools.com/cssref/pr_background-attachment.asp">https://www.w3schools.com/cssref/pr_background-attachment.asp</a> for more information.</p>
+				</div><div class="button-container">
+					<button class="previous">Previous Question</button>
+					<button id="submit">Submit Quiz</button>
+				</div>
+			</div>
+			<div id="results"></div>
+			<div id="reload">
+				<button id="retry" hidden onclick="reload()">Try Again</button>
+			</div>
+			
+		</div>
+		<script src = "./js/quiz.js"></script>
+	</body>
+</html>		

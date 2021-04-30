@@ -1,0 +1,402 @@
+/*IBM Plex Sans Regular 300*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+/*Poppins 500*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+	margin: 0px;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1{
+	font-family: Poppins, sans-serif;
+	font-size: 2.5em;
+}
+
+h2{
+	font-family: Poppins, sans-serif;
+	font-size: 2em;
+}
+
+h3{
+	font-family: Poppins, sans-serif;
+	font-size: 1.8em;
+}
+
+p{
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 1.5em;
+}
+
+a{
+	font-family: sans-serif;
+	font-size: 1.1em;
+}
+
+img{
+	max-width: 100%;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.bg-img{
+	background-image: url("/assets/pexels-johannes-plenio-1103970.jpg");
+	background-size: cover;
+	max-height: 100vh;
+}
+
+.std-container{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 80%;
+}
+
+.std-container:after{
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.nav-bar{
+	padding: 50px;
+	position: relative;
+	background: rgba(255,255,255,0);
+	z-index: 1000;
+	left: 0%;
+	top: 0%;
+	right: 0%;
+	bottom: 0%;
+}
+
+.nav-bar:after{
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.logo-link{
+	position: relative;
+	float: left;
+	max-width: 50%;
+}
+
+.logo-img{
+	max-width: 35px;
+}
+
+.nav-menu{
+	position: relative;
+	float: right;
+}
+
+.nav-link{
+	font-family: Poppins, sans-serif;
+	text-decoration: none;
+	color: #000000;
+	padding: 20px;
+	margin-right: 75px;
+}
+
+.hero-container{
+	height: 82vh;
+}
+
+.h-heading{
+	font-size: 4em;
+	width: 75%;
+	margin-bottom: 20px;
+}
+
+.h-para{
+	margin-top: 0px;
+	margin-bottom: 75px;
+	font-size: 1.1em;
+	line-height: 1.3em;
+}
+
+.h-button{
+	display: inline-block;
+	padding: 20px 35px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    color: #000;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.main-content-container{
+	height: auto;
+	padding: 100px 50px;
+}
+
+
+
+.m-inner-container{
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.m-header{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+
+.m-header-text{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.grid-container{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	object-fit: fill;
+}
+
+.g-inner{
+	display: flex;
+	justify-content: space-between;
+	text-align: left;
+	margin-bottom: 100px;
+}
+
+.g-text-outer{
+	display: flex;
+	max-width: 50%;
+	align-items: center;
+	text-align: left;
+}
+
+.g-text-inner{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+}
+
+.g-text{
+	display: flex;
+	justify-content: center;
+}
+
+.c-header{
+	height: 50%;
+	margin: 0px;
+}
+
+.g-img{
+	max-width: 40%;
+}
+
+.c-img{
+	display: flex;
+	justify-content: right;
+}
+
+#contact-outer{
+	flex-direction: column;
+	justify-content: center;
+}
+
+.contact-inner{
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 75px;
+}
+
+.contact-img{
+	width: 25%;
+}
+
+.p-left{
+	text-decoration: none;
+	color: #000;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 1.5em;
+}
+
+.p-centered{
+	text-align: center;
+}
+
+.g-text{
+	flex-direction: column;
+}
+
+#c-email{
+	margin-bottom: 0px;
+}
+
+.bottom-border:after{
+	content: "";  
+    display: block; 
+    margin: 0 auto; 
+    width: 50%; 
+    padding-top: 20px; 
+    border-bottom: 3px solid black; 
+}
+
+.quiz-outer{
+	max-width: 1200px;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 50px;
+}
+
+.button-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.next {
+	width: auto;
+	padding: 20px;
+	margin: 5px;
+	font-family: Poppins, sans-serif;
+	font-size: 1.1em;
+}
+
+.previous {
+	width: auto;
+	padding: 20px;
+	margin: 5px;
+	font-family: Poppins, sans-serif;
+	font-size: 1.1em;
+}
+
+#submit{
+	width: auto;
+	padding: 20px;
+	margin: 5px;
+	font-family: Poppins, sans-serif;
+	font-size: 1.1em;
+}
+
+.quiz-header{
+	padding-bottom: 0px;
+}
+
+.quiz-container{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	height: auto;
+ 	margin: 25px 50px 25px;
+}
+
+#results{
+	font-family: Poppins, sans-serif;
+	font-size: 1.5em;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+#reload{
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+#retry{
+	font-family: Poppins, sans-serif;
+	font-size: 1.1em;
+	padding: 10px;
+}
+
+/*Quiz Test*/
+
+.question{
+	font-family: Poppins, sans-serif;
+	font-size: 1.8em;
+	text-align: center;
+}
+.drag-drop{
+	justify-content: space-between;
+}
+
+.q-dd-inner{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.q-dd{
+	margin: 20px;
+	width: 500px;
+	height: 150px;
+	border: 1px solid #000;
+	border-radius: 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.q-dd-answers{
+	display: flex;
+	flex-direction: column;
+}
+
+.q-dd-a{
+	margin: 5px;
+	margin-bottom: 20px;
+	touch-action: none;
+}
+
+.q-drop-outer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 25px;
+}
+
+.q-drop{
+	padding: 10px;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 1.8em;
+}
+
+.q-msq-outer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 25px;
+}
+
+.q-msq{
+	display: flex;
+	flex-direction: row;
+	margin: 10px;
+	font-size: 1.5em;
+}
+
+.q-msq-r{
+	margin-top: 10px;
+}
+
+.p-hidden{
+	font-size: 1.2em;
+}
+
+.incorrect-msg{
+	font-family: Poppins, sans-serif;
+	font-size: 1.4em;
+}
+
+.a-hidden{
+	font-size: 1.2em;
+}
+
+.hidden-answer{
+	text-align: center;
+}
